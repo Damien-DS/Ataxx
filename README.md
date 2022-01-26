@@ -9,7 +9,10 @@ sudo apt install make (Distribution basé sur debian)
 Compilation :
 Mettez vous dans le répertoire du repo
 Si make installé :
-    Pour compliler, utilisez la commande make compile
+Pour compliler, utilisez la commande
+```bash
+make compile
+```
 Sinon 
 ```bash
 javac -cp bytecode -d bytecode src/ataxx/visuel/*.java
@@ -19,7 +22,11 @@ javac -cp bytecode Ataxx.java
   ```
 
 Execution : Si make installé
-    Pour lancer le programme, utilisez la commande make run @arguments
+Si make installé :
+Pour lancer le programme, utilisez la commande 
+```bash
+make run @arguments
+```
 Sinon
 ```bash
 java -cp bytecode:. Ataxx @arguments
@@ -29,9 +36,17 @@ java -cp bytecode:. Ataxx @arguments
 
 JAVADOC : 
 Si make installé :
-    Pour créer la javadoc de ce projet , utilisez la commande make javadoc
+Pour créer la javadoc de ce projet , utilisez la commande 
+```bash
+make javadoc
+```
 Sinon 
 ```bash
 javadoc -cp bytecode:. -d MaDoc src/ataxx/*/*.java
 ```
-
+2 autres fonctions du makefile 
+```bash
+make clean
+make javadocRM
+```
+Qui effacent respectivement les fichiers .class et la javadoc
