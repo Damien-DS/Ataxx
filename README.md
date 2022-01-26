@@ -26,3 +26,12 @@ java -cp bytecode:. Ataxx @arguments
 ```
 
 @arguments : si aucun alors par défaut les joueurs s'appeleront Joueur 1 Joueur 2 et auront respectivement les couleurs Bleu et Rouges
+
+JAVADOC : 
+Si make installé :
+    Pour créer la javadoc de ce projet , utilisez la commande make javadoc
+Sinon 
+```bash
+javadoc -cp bytecode:. -d MaDoc src/ataxx/*/*.java
+```
+
