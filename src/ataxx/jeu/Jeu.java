@@ -67,6 +67,8 @@ public class Jeu {
     joueurAyantLaMain = joueur[indiceJoueur];
     int indiceAdversaire = (indiceJoueur == 1) ? 0 : 1;
     adversaire = joueur[indiceAdversaire];
+    joueurAyantLaMain.ajouterNbPion(1);
+    adversaire.ajouterNbPion(1);
     plateauDeJeu.initPlateau();
     Messages.joueurCourant(joueurAyantLaMain);
   }

@@ -159,7 +159,7 @@ public class Plateau {
         if (i == 0 && j == 0) {
           cases[i][j] = new Case_Pion(jeu.retournerJoueurAyantLaMain().retournerCouleur());
         }
-        else if (i == 2 && j == 0) {
+        else if (i == 6 && j == 6) {
           cases[i][j] = new Case_Pion(jeu.retournerAdversaire().retournerCouleur());
         }
         else if ((i == 2 || i == 4) && (j == 2 || j == 4))
