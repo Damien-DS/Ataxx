@@ -156,10 +156,10 @@ public class Plateau {
   public void initPlateau() {
     for (int i = 0; i < cases.length; i++) {
       for (int j = 0; j < cases.length; j++) {
-        if (i == 0 && j == 0) {
+        if ((i == 0 && j == 0) || i == 6 && j == 6 ) {
           cases[i][j] = new Case_Pion(jeu.retournerJoueurAyantLaMain().retournerCouleur());
         }
-        else if (i == 6 && j == 6) {
+        else if ((i == 0 && j == 6) || (i == 6 && j == 0)) {
           cases[i][j] = new Case_Pion(jeu.retournerAdversaire().retournerCouleur());
         }
         else if ((i == 2 || i == 4) && (j == 2 || j == 4))

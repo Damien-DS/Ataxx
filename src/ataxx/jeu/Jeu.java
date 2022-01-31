@@ -425,7 +425,7 @@ enum Messages {
           affichage = affichage + " a passé le tour";
           break;
       case ABANDON : 
-          affichage = affichage + " a abandoné :`(";
+          affichage = affichage + " a abandonné :`(";
           break;
       }
       return affichage;
@@ -470,7 +470,7 @@ enum Messages {
         affichage = affichage + " a passé le tour";
         break;
     case ABANDON : 
-        affichage = affichage + " a abandoné :`(";
+        affichage = affichage + " a abandonné :`(";
         break;
     }
     return affichage;
